@@ -1,0 +1,1495 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)file:///C:/Users/10/Downloads/memo_shop_gifts_memories%20(1).html -->
+<html lang="ar" dir="rtl" class="scroll-smooth"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memo Shop - Gifts &amp; Memories | كتب تلوين وألوان</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="./Memo Shop - Gifts &amp; Memories _ كتب تلوين وألوان_files/saved_resource"></script>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="./Memo Shop - Gifts &amp; Memories _ كتب تلوين وألوان_files/all.min.css">
+    
+    <!-- Google Fonts (Cairo & Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./Memo Shop - Gifts &amp; Memories _ كتب تلوين وألوان_files/css2" rel="stylesheet">
+    
+    <!-- Three.js for 3D Background Effects -->
+    <script src="./Memo Shop - Gifts &amp; Memories _ كتب تلوين وألوان_files/three.min.js.download"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        memo: {
+                            pink: '#ff7ebb',
+                            deepPink: '#e04f98',
+                            purple: '#9d4edd',
+                            lightPurple: '#e2afff',
+                            cloud: '#fde2e4',
+                            dark: '#2b102f'
+                        }
+                    },
+                    fontFamily: {
+                        cairo: ['Cairo', 'sans-serif'],
+                        poppins: ['Poppins', 'sans-serif']
+                    },
+                    animation: {
+                        'float': 'floating 3s ease-in-out infinite',
+                        'pulse-glow': 'pulseGlow 2s infinite alternate',
+                        'sparkle': 'sparkle 1.5s infinite alternate'
+                    },
+                    keyframes: {
+                        floating: {
+                            '0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
+                            '50%': { transform: 'translateY(-12px) rotate(3deg)' }
+                        },
+                        pulseGlow: {
+                            '0%': { boxShadow: '0 0 15px rgba(224, 79, 152, 0.4)' },
+                            '100%': { boxShadow: '0 0 30px rgba(224, 79, 152, 0.9)' }
+                        },
+                        sparkle: {
+                            '0%': { opacity: '0.3', transform: 'scale(0.8)' },
+                            '100%': { opacity: '1', transform: 'scale(1.2)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Cairo', 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1f0824 0%, #3a1148 40%, #61186e 70%, #9e2a78 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Glassmorphism styling */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.22);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        }
+
+        .glass-card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .glass-card-hover:hover {
+            transform: translateY(-8px) scale(1.02);
+            background: rgba(255, 255, 255, 0.18);
+            border-color: rgba(255, 126, 187, 0.6);
+            box-shadow: 0 15px 35px rgba(224, 79, 152, 0.4);
+        }
+
+        .glass-nav {
+            background: rgba(31, 8, 36, 0.75);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 126, 187, 0.2);
+        }
+
+        /* Scrollbar custom */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1f0824;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #e04f98;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #ff7ebb;
+        }
+
+        #canvas-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #ffb7ff 0%, #ff7ebb 50%, #ffffff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gradient-btn {
+            background: linear-gradient(135deg, #e04f98 0%, #9d4edd 100%);
+            transition: all 0.3s ease;
+        }
+
+        .gradient-btn:hover {
+            background: linear-gradient(135deg, #ff7ebb 0%, #b55afe 100%);
+            box-shadow: 0 0 20px rgba(224, 79, 152, 0.6);
+            transform: translateY(-2px);
+        }
+
+        .badge-deposit {
+            background: linear-gradient(90deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+            color: #5d103d;
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0px}.-bottom-24{bottom:-6rem}.-left-24{left:-6rem}.-right-1{right:-0.25rem}.-right-24{right:-6rem}.-top-1{top:-0.25rem}.-top-24{top:-6rem}.left-3{left:0.75rem}.left-4{left:1rem}.top-0{top:0px}.top-2\.5{top:0.625rem}.top-3{top:0.75rem}.top-3\.5{top:0.875rem}.top-4{top:1rem}.right-2{right:0.5rem}.top-2{top:0.5rem}.z-10{z-index:10}.z-50{z-index:50}.mx-8{margin-left:2rem;margin-right:2rem}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:0.25rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mr-2{margin-right:0.5rem}.mt-1{margin-top:0.25rem}.mt-20{margin-top:5rem}.mt-4{margin-top:1rem}.mb-1\.5{margin-bottom:0.375rem}.line-clamp-2{overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-10{height:2.5rem}.h-12{height:3rem}.h-16{height:4rem}.h-20{height:5rem}.h-4{height:1rem}.h-5{height:1.25rem}.h-72{height:18rem}.h-8{height:2rem}.h-9{height:2.25rem}.h-\[90vh\]{height:90vh}.h-full{height:100%}.h-48{height:12rem}.max-h-\[55vh\]{max-height:55vh}.max-h-\[90vh\]{max-height:90vh}.min-h-screen{min-height:100vh}.w-10{width:2.5rem}.w-12{width:3rem}.w-16{width:4rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-72{width:18rem}.w-8{width:2rem}.w-9{width:2.25rem}.w-full{width:100%}.min-w-max{min-width:max-content}.max-w-2xl{max-width:42rem}.max-w-3xl{max-width:48rem}.max-w-5xl{max-width:64rem}.max-w-7xl{max-width:80rem}.max-w-md{max-width:28rem}.max-w-sm{max-width:24rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}@keyframes bounce{0%, 100%{transform:translateY(-25%);animation-timing-function:cubic-bezier(0.8,0,1,1)}50%{transform:none;animation-timing-function:cubic-bezier(0,0,0.2,1)}}.animate-bounce{animation:bounce 1s infinite}@keyframes floating{0%, 100%{transform:translateY(0px) rotate(0deg)}50%{transform:translateY(-12px) rotate(3deg)}}.animate-float{animation:floating 3s ease-in-out infinite}@keyframes pulseGlow{0%{box-shadow:0 0 15px rgba(224, 79, 152, 0.4)}100%{box-shadow:0 0 30px rgba(224, 79, 152, 0.9)}}.animate-pulse-glow{animation:pulseGlow 2s infinite alternate}.cursor-pointer{cursor:pointer}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-center{align-items:center}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:0.25rem}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.space-x-3 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.75rem * var(--tw-space-x-reverse));margin-left:calc(0.75rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.space-x-reverse > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:1}.divide-y > :not([hidden]) ~ :not([hidden]){--tw-divide-y-reverse:0;border-top-width:calc(1px * calc(1 - var(--tw-divide-y-reverse)));border-bottom-width:calc(1px * var(--tw-divide-y-reverse))}.divide-white\/5 > :not([hidden]) ~ :not([hidden]){border-color:rgb(255 255 255 / 0.05)}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.overflow-y-auto{overflow-y:auto}.scroll-smooth{scroll-behavior:smooth}.whitespace-nowrap{white-space:nowrap}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.rounded-md{border-radius:0.375rem}.border{border-width:1px}.border-2{border-width:2px}.border-b{border-bottom-width:1px}.border-l{border-left-width:1px}.border-t{border-top-width:1px}.border-pink-300\/30{border-color:rgb(249 168 212 / 0.3)}.border-pink-400{--tw-border-opacity:1;border-color:rgb(244 114 182 / var(--tw-border-opacity, 1))}.border-pink-400\/20{border-color:rgb(244 114 182 / 0.2)}.border-pink-400\/30{border-color:rgb(244 114 182 / 0.3)}.border-pink-400\/40{border-color:rgb(244 114 182 / 0.4)}.border-pink-400\/50{border-color:rgb(244 114 182 / 0.5)}.border-pink-500\/10{border-color:rgb(236 72 153 / 0.1)}.border-pink-500\/20{border-color:rgb(236 72 153 / 0.2)}.border-pink-500\/30{border-color:rgb(236 72 153 / 0.3)}.border-pink-500\/40{border-color:rgb(236 72 153 / 0.4)}.border-purple-400\/40{border-color:rgb(192 132 252 / 0.4)}.border-white\/10{border-color:rgb(255 255 255 / 0.1)}.border-white\/5{border-color:rgb(255 255 255 / 0.05)}.bg-black\/20{background-color:rgb(0 0 0 / 0.2)}.bg-black\/30{background-color:rgb(0 0 0 / 0.3)}.bg-black\/40{background-color:rgb(0 0 0 / 0.4)}.bg-black\/50{background-color:rgb(0 0 0 / 0.5)}.bg-black\/70{background-color:rgb(0 0 0 / 0.7)}.bg-black\/80{background-color:rgb(0 0 0 / 0.8)}.bg-black\/90{background-color:rgb(0 0 0 / 0.9)}.bg-pink-500{--tw-bg-opacity:1;background-color:rgb(236 72 153 / var(--tw-bg-opacity, 1))}.bg-pink-500\/20{background-color:rgb(236 72 153 / 0.2)}.bg-pink-500\/30{background-color:rgb(236 72 153 / 0.3)}.bg-pink-500\/40{background-color:rgb(236 72 153 / 0.4)}.bg-pink-950\/60{background-color:rgb(80 7 36 / 0.6)}.bg-purple-600\/30{background-color:rgb(147 51 234 / 0.3)}.bg-purple-900\/60{background-color:rgb(88 28 135 / 0.6)}.bg-purple-950\/60{background-color:rgb(59 7 100 / 0.6)}.bg-slate-900{--tw-bg-opacity:1;background-color:rgb(15 23 42 / var(--tw-bg-opacity, 1))}.bg-slate-950{--tw-bg-opacity:1;background-color:rgb(2 6 23 / var(--tw-bg-opacity, 1))}.bg-white\/10{background-color:rgb(255 255 255 / 0.1)}.bg-white\/5{background-color:rgb(255 255 255 / 0.05)}.bg-pink-600\/80{background-color:rgb(219 39 119 / 0.8)}.bg-gradient-to-b{background-image:linear-gradient(to bottom, var(--tw-gradient-stops))}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.bg-gradient-to-tr{background-image:linear-gradient(to top right, var(--tw-gradient-stops))}.from-pink-500{--tw-gradient-from:#ec4899 var(--tw-gradient-from-position);--tw-gradient-to:rgb(236 72 153 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-purple-900{--tw-gradient-from:#581c87 var(--tw-gradient-from-position);--tw-gradient-to:rgb(88 28 135 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-purple-900\/80{--tw-gradient-from:rgb(88 28 135 / 0.8) var(--tw-gradient-from-position);--tw-gradient-to:rgb(88 28 135 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-purple-950{--tw-gradient-from:#3b0764 var(--tw-gradient-from-position);--tw-gradient-to:rgb(59 7 100 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-pink-600{--tw-gradient-to:rgb(219 39 119 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #db2777 var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-slate-900{--tw-gradient-to:rgb(15 23 42 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #0f172a var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-indigo-900{--tw-gradient-to:#312e81 var(--tw-gradient-to-position)}.to-pink-900\/80{--tw-gradient-to:rgb(131 24 67 / 0.8) var(--tw-gradient-to-position)}.to-pink-950{--tw-gradient-to:#500724 var(--tw-gradient-to-position)}.to-purple-600{--tw-gradient-to:#9333ea var(--tw-gradient-to-position)}.to-slate-950{--tw-gradient-to:#020617 var(--tw-gradient-to-position)}.object-cover{object-fit:cover}.p-0\.5{padding:0.125rem}.p-2\.5{padding:0.625rem}.p-3{padding:0.75rem}.p-3\.5{padding:0.875rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-3\.5{padding-left:0.875rem;padding-right:0.875rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-3\.5{padding-top:0.875rem;padding-bottom:0.875rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.py-8{padding-top:2rem;padding-bottom:2rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.pb-12{padding-bottom:3rem}.pb-4{padding-bottom:1rem}.pr-1{padding-right:0.25rem}.pr-10{padding-right:2.5rem}.pr-11{padding-right:2.75rem}.pr-2{padding-right:0.5rem}.pt-2{padding-top:0.5rem}.pt-4{padding-top:1rem}.pt-8{padding-top:2rem}.text-center{text-align:center}.text-right{text-align:right}.font-mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}.font-poppins{font-family:Poppins, sans-serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-black{font-weight:900}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-light{font-weight:300}.font-semibold{font-weight:600}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.text-gray-100{--tw-text-opacity:1;color:rgb(243 244 246 / var(--tw-text-opacity, 1))}.text-gray-200{--tw-text-opacity:1;color:rgb(229 231 235 / var(--tw-text-opacity, 1))}.text-gray-300{--tw-text-opacity:1;color:rgb(209 213 219 / var(--tw-text-opacity, 1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.text-green-400{--tw-text-opacity:1;color:rgb(74 222 128 / var(--tw-text-opacity, 1))}.text-pink-100{--tw-text-opacity:1;color:rgb(252 231 243 / var(--tw-text-opacity, 1))}.text-pink-100\/90{color:rgb(252 231 243 / 0.9)}.text-pink-200{--tw-text-opacity:1;color:rgb(251 207 232 / var(--tw-text-opacity, 1))}.text-pink-200\/70{color:rgb(251 207 232 / 0.7)}.text-pink-200\/80{color:rgb(251 207 232 / 0.8)}.text-pink-300{--tw-text-opacity:1;color:rgb(249 168 212 / var(--tw-text-opacity, 1))}.text-pink-300\/80{color:rgb(249 168 212 / 0.8)}.text-pink-400{--tw-text-opacity:1;color:rgb(244 114 182 / var(--tw-text-opacity, 1))}.text-pink-400\/50{color:rgb(244 114 182 / 0.5)}.text-purple-400{--tw-text-opacity:1;color:rgb(192 132 252 / var(--tw-text-opacity, 1))}.text-red-400{--tw-text-opacity:1;color:rgb(248 113 113 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-gray-300\/80{color:rgb(209 213 219 / 0.8)}.text-pink-200\/60{color:rgb(251 207 232 / 0.6)}.placeholder-pink-200::placeholder{--tw-placeholder-opacity:1;color:rgb(251 207 232 / var(--tw-placeholder-opacity, 1))}.accent-pink-500{accent-color:#ec4899}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-pink-500\/50{--tw-shadow-color:rgb(236 72 153 / 0.5);--tw-shadow:var(--tw-shadow-colored)}.blur-3xl{--tw-blur:blur(64px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-lg{--tw-backdrop-blur:blur(16px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.duration-500{transition-duration:500ms}.hover\:border-pink-400:hover{--tw-border-opacity:1;border-color:rgb(244 114 182 / var(--tw-border-opacity, 1))}.hover\:bg-pink-500\/20:hover{background-color:rgb(236 72 153 / 0.2)}.hover\:bg-pink-500\/30:hover{background-color:rgb(236 72 153 / 0.3)}.hover\:bg-pink-500\/60:hover{background-color:rgb(236 72 153 / 0.6)}.hover\:bg-purple-600\/40:hover{background-color:rgb(147 51 234 / 0.4)}.hover\:bg-white\/20:hover{background-color:rgb(255 255 255 / 0.2)}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus\:ring-pink-400:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(244 114 182 / var(--tw-ring-opacity, 1))}.group:hover .group-hover\:scale-110{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@media (min-width: 640px){.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}}@media (min-width: 768px){.md\:flex{display:flex}.md\:hidden{display:none}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:p-12{padding:3rem}.md\:p-8{padding:2rem}.md\:text-2xl{font-size:1.5rem;line-height:2rem}.md\:text-3xl{font-size:1.875rem;line-height:2.25rem}.md\:text-5xl{font-size:3rem;line-height:1}.md\:text-lg{font-size:1.125rem;line-height:1.75rem}.md\:text-sm{font-size:0.875rem;line-height:1.25rem}}@media (min-width: 1024px){.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.lg\:px-8{padding-left:2rem;padding-right:2rem}}@media (min-width: 1280px){.xl\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}}.ltr\:rotate-180:where([dir="ltr"], [dir="ltr"] *){--tw-rotate:180deg;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.ltr\:text-left:where([dir="ltr"], [dir="ltr"] *){text-align:left}.rtl\:rotate-0:where([dir="rtl"], [dir="rtl"] *){--tw-rotate:0deg;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.rtl\:space-x-reverse:where([dir="rtl"], [dir="rtl"] *) > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:1}.rtl\:text-right:where([dir="rtl"], [dir="rtl"] *){text-align:right}</style></head>
+<body class="relative min-h-screen pb-12 text-gray-100">
+
+    <canvas id="canvas-bg" width="1366" height="641" style="width: 1366px; height: 641px;"></canvas>
+
+    <nav class="sticky top-0 z-50 glass-nav transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Logo & Brand Name -->
+                <div class="flex items-center space-x-3 space-x-reverse cursor-pointer" onclick="filterCategory(&#39;all&#39;)">
+                    <div class="relative w-12 h-12 rounded-full overflow-hidden border-2 border-pink-400 p-0.5 shadow-lg shadow-pink-500/50 animate-pulse-glow">
+                        <!-- Custom Logo SVG matching the user's provided logo -->
+                        <svg viewBox="0 0 200 200" class="w-full h-full rounded-full bg-gradient-to-br from-purple-900 via-pink-600 to-indigo-900">
+                            <path d="M 30,120 Q 100,20 170,80 Q 120,170 30,120" fill="none" stroke="#ffffff" stroke-width="6" opacity="0.8"></path>
+                            <polygon points="120,35 125,48 138,50 128,60 131,73 120,65 109,73 112,60 102,50 115,48" fill="#ffffff"></polygon>
+                            <text x="50%" y="48%" text-anchor="middle" fill="#ffffff" font-family="&#39;Cairo&#39;, sans-serif" font-weight="900" font-size="36" font-style="italic">memo</text>
+                            <text x="50%" y="68%" text-anchor="middle" fill="#ffffff" font-family="&#39;Cairo&#39;, sans-serif" font-weight="700" font-size="28">shop</text>
+                        </svg>
+                    </div>
+                    <div>
+                        <span class="text-2xl font-black tracking-wider gradient-text font-poppins">memo shop</span>
+                        <span class="block text-xs text-pink-200 tracking-widest font-light" id="sub-title">GIFTS &amp; MEMORIES</span>
+                    </div>
+                </div>
+
+                <!-- Desktop Search Bar -->
+                <div class="hidden md:flex flex-1 max-w-md mx-8">
+                    <div class="relative w-full">
+                        <input type="text" id="searchInput" oninput="handleSearch()" placeholder="ابحث عن كتاب تلوين، فيلم، مسلسل، ألوان..." class="w-full bg-white/10 text-white placeholder-pink-200 text-sm rounded-full py-2.5 px-5 pr-11 border border-pink-300/30 focus:outline-none focus:ring-2 focus:ring-pink-400 transition-all">
+                        <i class="fa-solid fa-magnifying-glass absolute left-4 top-3.5 text-pink-300"></i>
+                    </div>
+                </div>
+
+                <!-- Navigation Action Buttons -->
+                <div class="flex items-center space-x-3 rtl:space-x-reverse">
+                    
+                    <!-- Language Toggle -->
+                    <button onclick="toggleLanguage()" class="glass-card hover:bg-white/20 px-3 py-1.5 rounded-full text-xs font-bold text-pink-200 flex items-center gap-1 transition">
+                        <i class="fa-solid fa-globe"></i>
+                        <span id="langText">EN</span>
+                    </button>
+
+                    <!-- Cart Button -->
+                    <button onclick="toggleCartModal()" class="relative p-2.5 rounded-full glass-card hover:bg-pink-500/30 text-white transition">
+                        <i class="fa-solid fa-bag-shopping text-xl text-pink-300"></i>
+                        <span id="cartCount" class="absolute -top-1 -right-1 bg-gradient-to-r from-pink-500 to-purple-600 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center font-bold shadow-md">0</span>
+                    </button>
+
+                    <!-- Admin Control Login Button -->
+                    <button onclick="openAdminModal()" class="glass-card hover:bg-purple-600/40 text-pink-200 hover:text-white px-3.5 py-2 rounded-xl text-xs font-bold flex items-center gap-2 border border-pink-400/30 transition">
+                        <i class="fa-solid fa-user-gear"></i>
+                        <span data-i18n="admin_panel">لوحة التحكم</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Search Bar -->
+            <div class="md:hidden pb-4">
+                <div class="relative w-full">
+                    <input type="text" id="searchInputMobile" oninput="handleSearchMobile()" placeholder="ابحث هنا..." class="w-full bg-white/10 text-white placeholder-pink-200 text-sm rounded-full py-2 px-4 pr-10 border border-pink-300/30 focus:outline-none focus:ring-2 focus:ring-pink-400">
+                    <i class="fa-solid fa-magnifying-glass absolute left-3 top-2.5 text-pink-300"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Categories Bar -->
+        <div class="bg-black/20 border-t border-b border-pink-500/20 py-2.5 backdrop-blur-md overflow-x-auto scrollbar-none">
+            <div class="max-w-7xl mx-auto px-4 flex items-center justify-center min-w-max space-x-3 rtl:space-x-reverse text-sm">
+                <button onclick="filterCategory(&#39;all&#39;)" class="cat-btn active-cat bg-pink-500/40 border border-pink-400 text-white px-4 py-1.5 rounded-full font-semibold transition" data-cat="all" data-i18n="cat_all">🌟 الكل</button>
+                <button onclick="filterCategory(&#39;bestie&#39;)" class="cat-btn bg-white/5 border border-white/10 text-pink-100 hover:bg-pink-500/30 px-4 py-1.5 rounded-full font-semibold transition" data-cat="bestie" data-i18n="cat_bestie">👭 كتب تلوين أنت وصاحبك</button>
+                <button onclick="filterCategory(&#39;movies&#39;)" class="cat-btn bg-white/5 border border-white/10 text-pink-100 hover:bg-pink-500/30 px-4 py-1.5 rounded-full font-semibold transition" data-cat="movies" data-i18n="cat_movies">🎬 كتب أفلام</button>
+                <button onclick="filterCategory(&#39;series&#39;)" class="cat-btn bg-white/5 border border-white/10 text-pink-100 hover:bg-pink-500/30 px-4 py-1.5 rounded-full font-semibold transition" data-cat="series" data-i18n="cat_series">📺 كتب مسلسلات</button>
+                <button onclick="filterCategory(&#39;tools&#39;)" class="cat-btn bg-white/5 border border-white/10 text-pink-100 hover:bg-pink-500/30 px-4 py-1.5 rounded-full font-semibold transition" data-cat="tools" data-i18n="cat_tools">🎨 الألوان والأدوات</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-12 text-center">
+        <div class="glass-card rounded-3xl p-8 md:p-12 border border-pink-400/30 relative overflow-hidden shadow-2xl">
+            <!-- Background Glow elements -->
+            <div class="absolute -top-24 -left-24 w-72 h-72 bg-pink-500/30 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute -bottom-24 -right-24 w-72 h-72 bg-purple-600/30 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="relative z-10 max-w-3xl mx-auto">
+                <span class="inline-block bg-pink-500/20 text-pink-200 border border-pink-400/40 rounded-full px-4 py-1 text-xs md:text-sm font-bold mb-4 animate-bounce">
+                    ✨ عالم التلوين والذكريات الجميلة ✨
+                </span>
+                <h1 class="text-3xl md:text-5xl font-black gradient-text leading-tight mb-4" data-i18n="hero_title">
+                    لون أحلى اللحظات مع أصحابك وذكريات أفلامك المفضلة!
+                </h1>
+                <p class="text-pink-100/90 text-sm md:text-lg mb-8 font-light" data-i18n="hero_subtitle">
+                    كتالوج حصري لكتب التلوين الزوجية، كتب أفلامك ومسلسلاتك المحبوبة وأجود أنواع الألوان بأسعار مميزة.
+                </p>
+
+                <!-- Deposit Feature Announcement Banner -->
+                <div class="bg-gradient-to-r from-purple-900/80 to-pink-900/80 p-4 rounded-2xl border border-pink-400/40 flex flex-col md:flex-row items-center justify-between gap-4">
+                    <div class="flex items-center gap-3 text-right rtl:text-right ltr:text-left">
+                        <div class="w-10 h-10 rounded-full bg-pink-500/30 flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-coins text-pink-300 text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm text-pink-200" data-i18n="deposit_banner_title">امكانية الدفع 50% مقدم فقط!</h4>
+                            <p class="text-xs text-gray-300" data-i18n="deposit_banner_sub">ادفع 50% عبر اتصالات كاش أو انستا باي وباقي المبلغ عند الاستلام 🚚</p>
+                        </div>
+                    </div>
+                    <button onclick="scrollToProducts()" class="gradient-btn text-white font-bold px-6 py-2.5 rounded-full text-xs md:text-sm whitespace-nowrap shadow-lg">
+                        <span data-i18n="shop_now">تسوق الآن 🎨</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="productsSection" class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        
+        <!-- Section Title & Filter Summary -->
+        <div class="flex flex-col md:flex-row items-center justify-between mb-8 gap-4">
+            <div>
+                <h2 class="text-2xl md:text-3xl font-extrabold gradient-text flex items-center gap-2">
+                    <i class="fa-solid fa-palette text-pink-400"></i>
+                    <span id="currentCategoryTitle" data-i18n="cat_all">جميع المنتجات</span>
+                </h2>
+                <p class="text-xs md:text-sm text-pink-200/80 mt-1" data-i18n="catalog_sub">اختر كتابك المفضل وابدأ التلوين والبهجة</p>
+            </div>
+            
+            <div class="text-xs text-pink-200 glass-card px-4 py-2 rounded-full border border-pink-400/30">
+                <span data-i18n="total_products">عدد المنتجات:</span> <strong id="productCount" class="text-pink-300 font-bold">6</strong>
+            </div>
+        </div>
+
+        <!-- Product Grid -->
+        <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"><div class="glass-card glass-card-hover rounded-2xl overflow-hidden flex flex-col justify-between p-4 border border-pink-400/20">
+                        <div>
+                            <div class="relative w-full h-48 rounded-xl overflow-hidden mb-3 group">
+                                <img src="./Memo Shop - Gifts &amp; Memories _ كتب تلوين وألوان_files/photo-1513542789411-b6a5d4f31634" alt="كتاب تلوين Besties - أنت وصاحبك (إصدار Twin Duo)" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onerror="this.src=&#39;https://placehold.co/400x300/2b102f/ff7ebb?text=Memo+Shop&#39;">
+                                <span class="absolute top-2 right-2 bg-pink-600/80 backdrop-blur-md text-white text-[10px] font-bold px-2.5 py-1 rounded-full border border-pink-300/30">
+                                    كتب أنت وصاحبك
+                                </span>
+                            </div>
+                            <h3 class="font-bold text-sm text-pink-100 line-clamp-2 mb-1.5">كتاب تلوين Besties - أنت وصاحبك (إصدار Twin Duo)</h3>
+                            <p class="text-xs text-gray-300/80 line-clamp-2 mb-3 font-light">كتاب تلوين مزدوج مصمم لمشاركته مع صديقك المفضل. يحتوي على 40 صفحة مرحة ملهمة.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center justify-between mb-3 pt-2 border-t border-pink-500/10">
+                                <span class="text-lg font-black gradient-text">180 EGP</span>
+                                <span class="badge-deposit text-[10px] font-bold px-2 py-0.5 rounded-md">50% مقدم</span>
+                            </div>
+                            <button onclick="addToCart(&#39;prod-1&#39;)" class="w-full gradient-btn text-white text-xs font-bold py-2.5 rounded-xl flex items-center justify-center gap-2 shadow-md">
+                                <i class="fa-solid fa-cart-plus"></i>
+                                <span data-i18n="add_to_cart">إضافة للسلة</span>
+                            </button>
+                        </div>
+                    </div><div class="glass-card glass-card-hover rounded-2xl overflow-hidden flex flex-col justify-between p-4 border border-pink-400/20">
+                        <div>
+                            <div class="relative w-full h-48 rounded-xl overflow-hidden mb-3 group">
+                                <img src="./Memo Shop - Gifts &amp; Memories _ كتب تلوين وألوان_files/photo-1544716278-ca5e3f4abd8c" alt="كتاب تلوين عالم هاري بوتر السحري (Movie Edition)" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onerror="this.src=&#39;https://placehold.co/400x300/2b102f/ff7ebb?text=Memo+Shop&#39;">
+                                <span class="absolute top-2 right-2 bg-pink-600/80 backdrop-blur-md text-white text-[10px] font-bold px-2.5 py-1 rounded-full border border-pink-300/30">
+                                    كتب أفلام
+                                </span>
+                            </div>
+                            <h3 class="font-bold text-sm text-pink-100 line-clamp-2 mb-1.5">كتاب تلوين عالم هاري بوتر السحري (Movie Edition)</h3>
+                            <p class="text-xs text-gray-300/80 line-clamp-2 mb-3 font-light">عِش مغامرات هوجوورتس ولون أبطالك وشخصياتك المفضلة بتفاصيل مذهلة.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center justify-between mb-3 pt-2 border-t border-pink-500/10">
+                                <span class="text-lg font-black gradient-text">210 EGP</span>
+                                <span class="badge-deposit text-[10px] font-bold px-2 py-0.5 rounded-md">50% مقدم</span>
+                            </div>
+                            <button onclick="addToCart(&#39;prod-2&#39;)" class="w-full gradient-btn text-white text-xs font-bold py-2.5 rounded-xl flex items-center justify-center gap-2 shadow-md">
+                                <i class="fa-solid fa-cart-plus"></i>
+                                <span data-i18n="add_to_cart">إضافة للسلة</span>
+                            </button>
+                        </div>
+                    </div><div class="glass-card glass-card-hover rounded-2xl overflow-hidden flex flex-col justify-between p-4 border border-pink-400/20">
+                        <div>
+                            <div class="relative w-full h-48 rounded-xl overflow-hidden mb-3 group">
+                                <img src="./Memo Shop - Gifts &amp; Memories _ كتب تلوين وألوان_files/photo-1532012197267-da84d127e765" alt="كتاب تلوين مسلسل Friends (The One With Coloring)" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onerror="this.src=&#39;https://placehold.co/400x300/2b102f/ff7ebb?text=Memo+Shop&#39;">
+                                <span class="absolute top-2 right-2 bg-pink-600/80 backdrop-blur-md text-white text-[10px] font-bold px-2.5 py-1 rounded-full border border-pink-300/30">
+                                    كتب مسلسلات
+                                </span>
+                            </div>
+                            <h3 class="font-bold text-sm text-pink-100 line-clamp-2 mb-1.5">كتاب تلوين مسلسل Friends (The One With Coloring)</h3>
+                            <p class="text-xs text-gray-300/80 line-clamp-2 mb-3 font-light">استمتع بأشهر لقطات ومقولات فريندز في كتاب تلوين مليء بالنستالجيا والذكريات.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center justify-between mb-3 pt-2 border-t border-pink-500/10">
+                                <span class="text-lg font-black gradient-text">195 EGP</span>
+                                <span class="badge-deposit text-[10px] font-bold px-2 py-0.5 rounded-md">50% مقدم</span>
+                            </div>
+                            <button onclick="addToCart(&#39;prod-3&#39;)" class="w-full gradient-btn text-white text-xs font-bold py-2.5 rounded-xl flex items-center justify-center gap-2 shadow-md">
+                                <i class="fa-solid fa-cart-plus"></i>
+                                <span data-i18n="add_to_cart">إضافة للسلة</span>
+                            </button>
+                        </div>
+                    </div><div class="glass-card glass-card-hover rounded-2xl overflow-hidden flex flex-col justify-between p-4 border border-pink-400/20">
+                        <div>
+                            <div class="relative w-full h-48 rounded-xl overflow-hidden mb-3 group">
+                                <img src="./Memo Shop - Gifts &amp; Memories _ كتب تلوين وألوان_files/photo-1513364776144-60967b0f800f" alt="طقم ألوان أكريليك مزدوجة السن 48 لون (Dual Tip Acrylic Markers)" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onerror="this.src=&#39;https://placehold.co/400x300/2b102f/ff7ebb?text=Memo+Shop&#39;">
+                                <span class="absolute top-2 right-2 bg-pink-600/80 backdrop-blur-md text-white text-[10px] font-bold px-2.5 py-1 rounded-full border border-pink-300/30">
+                                    ألوان وأدوات
+                                </span>
+                            </div>
+                            <h3 class="font-bold text-sm text-pink-100 line-clamp-2 mb-1.5">طقم ألوان أكريليك مزدوجة السن 48 لون (Dual Tip Acrylic Markers)</h3>
+                            <p class="text-xs text-gray-300/80 line-clamp-2 mb-3 font-light">ألوان فاخرة ثابتة وتغطية ممتازة لصفحات كتب التلوين والرسم.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center justify-between mb-3 pt-2 border-t border-pink-500/10">
+                                <span class="text-lg font-black gradient-text">320 EGP</span>
+                                <span class="badge-deposit text-[10px] font-bold px-2 py-0.5 rounded-md">50% مقدم</span>
+                            </div>
+                            <button onclick="addToCart(&#39;prod-4&#39;)" class="w-full gradient-btn text-white text-xs font-bold py-2.5 rounded-xl flex items-center justify-center gap-2 shadow-md">
+                                <i class="fa-solid fa-cart-plus"></i>
+                                <span data-i18n="add_to_cart">إضافة للسلة</span>
+                            </button>
+                        </div>
+                    </div><div class="glass-card glass-card-hover rounded-2xl overflow-hidden flex flex-col justify-between p-4 border border-pink-400/20">
+                        <div>
+                            <div class="relative w-full h-48 rounded-xl overflow-hidden mb-3 group">
+                                <img src="./Memo Shop - Gifts &amp; Memories _ كتب تلوين وألوان_files/photo-1589829085413-56de8ae18c73" alt="كتاب تلوين ثنائي Soulmates - للأصحاب والأحباء" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onerror="this.src=&#39;https://placehold.co/400x300/2b102f/ff7ebb?text=Memo+Shop&#39;">
+                                <span class="absolute top-2 right-2 bg-pink-600/80 backdrop-blur-md text-white text-[10px] font-bold px-2.5 py-1 rounded-full border border-pink-300/30">
+                                    كتب أنت وصاحبك
+                                </span>
+                            </div>
+                            <h3 class="font-bold text-sm text-pink-100 line-clamp-2 mb-1.5">كتاب تلوين ثنائي Soulmates - للأصحاب والأحباء</h3>
+                            <p class="text-xs text-gray-300/80 line-clamp-2 mb-3 font-light">رسومات مقسومة بين صفحتين تقومان بتلوينها معاً في وقت واحد.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center justify-between mb-3 pt-2 border-t border-pink-500/10">
+                                <span class="text-lg font-black gradient-text">175 EGP</span>
+                                <span class="badge-deposit text-[10px] font-bold px-2 py-0.5 rounded-md">50% مقدم</span>
+                            </div>
+                            <button onclick="addToCart(&#39;prod-5&#39;)" class="w-full gradient-btn text-white text-xs font-bold py-2.5 rounded-xl flex items-center justify-center gap-2 shadow-md">
+                                <i class="fa-solid fa-cart-plus"></i>
+                                <span data-i18n="add_to_cart">إضافة للسلة</span>
+                            </button>
+                        </div>
+                    </div><div class="glass-card glass-card-hover rounded-2xl overflow-hidden flex flex-col justify-between p-4 border border-pink-400/20">
+                        <div>
+                            <div class="relative w-full h-48 rounded-xl overflow-hidden mb-3 group">
+                                <img src="./Memo Shop - Gifts &amp; Memories _ كتب تلوين وألوان_files/ff7ebb" alt="كتاب تلوين مسلسلات أنمي ودراما الكورية K-Drama" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onerror="this.src=&#39;https://placehold.co/400x300/2b102f/ff7ebb?text=Memo+Shop&#39;">
+                                <span class="absolute top-2 right-2 bg-pink-600/80 backdrop-blur-md text-white text-[10px] font-bold px-2.5 py-1 rounded-full border border-pink-300/30">
+                                    كتب مسلسلات
+                                </span>
+                            </div>
+                            <h3 class="font-bold text-sm text-pink-100 line-clamp-2 mb-1.5">كتاب تلوين مسلسلات أنمي ودراما الكورية K-Drama</h3>
+                            <p class="text-xs text-gray-300/80 line-clamp-2 mb-3 font-light">أشهر المشاهد الرومانسية والدرامية بالرسومات الكرتونية الفريدة.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center justify-between mb-3 pt-2 border-t border-pink-500/10">
+                                <span class="text-lg font-black gradient-text">185 EGP</span>
+                                <span class="badge-deposit text-[10px] font-bold px-2 py-0.5 rounded-md">50% مقدم</span>
+                            </div>
+                            <button onclick="addToCart(&#39;prod-6&#39;)" class="w-full gradient-btn text-white text-xs font-bold py-2.5 rounded-xl flex items-center justify-center gap-2 shadow-md">
+                                <i class="fa-solid fa-cart-plus"></i>
+                                <span data-i18n="add_to_cart">إضافة للسلة</span>
+                            </button>
+                        </div>
+                    </div></div>
+
+        <!-- Empty State Message -->
+        <div id="emptyState" class="hidden text-center py-16 glass-card rounded-3xl border border-pink-400/20">
+            <i class="fa-solid fa-ghost text-5xl text-pink-400/50 mb-3 animate-float"></i>
+            <h3 class="text-xl font-bold text-pink-200" data-i18n="no_products">لا توجد منتجات مطابقة للبحث</h3>
+            <p class="text-xs text-gray-300 mt-1" data-i18n="try_another">جرب البحث بكلمات أخرى أو تغيير القسم</p>
+        </div>
+    </main>
+
+    <div id="cartModal" class="fixed inset-0 z-50 hidden flex items-center justify-end bg-black/70 backdrop-blur-sm transition-all duration-300">
+        <div class="w-full max-w-md h-full bg-gradient-to-b from-purple-950 to-slate-950 border-l border-pink-500/30 p-6 flex flex-col justify-between shadow-2xl overflow-y-auto">
+            <div>
+                <div class="flex items-center justify-between pb-4 border-b border-pink-500/20 mb-4">
+                    <h3 class="text-xl font-bold gradient-text flex items-center gap-2">
+                        <i class="fa-solid fa-basket-shopping text-pink-400"></i>
+                        <span data-i18n="cart_title">سلة المشتريات</span>
+                    </h3>
+                    <button onclick="toggleCartModal()" class="w-8 h-8 rounded-full glass-card text-pink-300 hover:text-white flex items-center justify-center">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <!-- Cart Items List -->
+                <div id="cartItemsList" class="space-y-4 max-h-[55vh] overflow-y-auto pr-1">
+                    <div class="text-center py-8 text-pink-200/60 text-xs">
+                        <i class="fa-solid fa-cart-arrow-down text-3xl mb-2"></i>
+                        <p>السلة فارغة حالياً</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cart Footer Summary -->
+            <div class="border-t border-pink-500/20 pt-4 mt-4 space-y-3">
+                <div class="flex justify-between text-sm text-pink-200">
+                    <span data-i18n="subtotal">المجموع الفرعي:</span>
+                    <span id="cartSubtotal" class="font-bold text-white">0 EGP</span>
+                </div>
+                <div class="flex justify-between text-xs text-pink-300/80">
+                    <span data-i18n="shipping_note">الشحن:</span>
+                    <span data-i18n="calculated_checkout">يحسب في الخطوة التالية</span>
+                </div>
+                <div class="flex justify-between text-lg font-black text-pink-300 pt-2 border-t border-pink-500/10">
+                    <span data-i18n="total">الإجمالي:</span>
+                    <span id="cartTotal" class="gradient-text">0 EGP</span>
+                </div>
+
+                <button onclick="startCheckout()" id="checkoutBtn" class="w-full gradient-btn text-white font-bold py-3.5 rounded-xl shadow-lg flex items-center justify-center gap-2 transition">
+                    <span data-i18n="proceed_checkout">متابعة الشراء (طريقة Amazon / Noon)</span>
+                    <i class="fa-solid fa-arrow-left rtl:rotate-0 ltr:rotate-180"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="checkoutModal" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-black/80 backdrop-blur-md p-4">
+        <div class="w-full max-w-2xl bg-gradient-to-br from-purple-950 via-slate-900 to-pink-950 rounded-3xl border border-pink-500/40 shadow-2xl p-6 md:p-8 overflow-y-auto max-h-[90vh]">
+            
+            <!-- Modal Header -->
+            <div class="flex justify-between items-center pb-4 border-b border-pink-500/20 mb-6">
+                <div>
+                    <h3 class="text-xl md:text-2xl font-black gradient-text" data-i18n="checkout_heading">إتمام الطلب</h3>
+                    <p class="text-xs text-pink-200/80" data-i18n="secure_checkout">دفع آمن وسريع مثل نون وأمازون</p>
+                </div>
+                <button onclick="closeCheckoutModal()" class="text-gray-400 hover:text-white text-xl">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <!-- Checkout Form Container -->
+            <form id="checkoutForm" onsubmit="handlePlaceOrder(event)" class="space-y-6">
+                
+                <!-- Customer Details -->
+                <div class="space-y-4">
+                    <h4 class="text-sm font-bold text-pink-300 flex items-center gap-2">
+                        <i class="fa-solid fa-truck-fast"></i>
+                        <span data-i18n="shipping_info">بيانات الشحن والعنوان</span>
+                    </h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-semibold text-pink-200 mb-1" data-i18n="full_name">الاسم بالكامل *</label>
+                            <input type="text" id="custName" required="" class="w-full bg-white/10 border border-pink-400/30 rounded-xl px-4 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-pink-400" placeholder="مثال: ملك محمود">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-pink-200 mb-1" data-i18n="phone">رقم الهاتف (المربوط بالواتساب) *</label>
+                            <input type="tel" id="custPhone" required="" class="w-full bg-white/10 border border-pink-400/30 rounded-xl px-4 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-pink-400" placeholder="010xxxxxxx">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-pink-200 mb-1" data-i18n="address">العنوان التفصيلي (المحافظة / المدينة / الشارع) *</label>
+                        <textarea id="custAddress" required="" rows="2" class="w-full bg-white/10 border border-pink-400/30 rounded-xl px-4 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-pink-400" placeholder="مثال: القاهرة - Nasr City - شارع عباس العقاد..."></textarea>
+                    </div>
+                </div>
+
+                <!-- Payment Deposit Options (50% Advance or 100% Full) -->
+                <div class="space-y-3 pt-2 border-t border-pink-500/20">
+                    <h4 class="text-sm font-bold text-pink-300 flex items-center gap-2">
+                        <i class="fa-solid fa-percent"></i>
+                        <span data-i18n="payment_plan">اختر نظام الدفع</span>
+                    </h4>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        <label class="relative glass-card p-3.5 rounded-2xl border cursor-pointer flex items-center gap-3 hover:border-pink-400 transition">
+                            <input type="radio" name="paymentOption" value="50" checked="" onchange="updatePaymentCalculations()" class="accent-pink-500 w-4 h-4">
+                            <div>
+                                <span class="block text-xs font-bold text-pink-200" data-i18n="plan_50">دفع 50% مقدم قبل الشحن</span>
+                                <span class="block text-[10px] text-gray-300" data-i18n="plan_50_sub">و 50% المتبقية تسدد عند الاستلام</span>
+                            </div>
+                        </label>
+                        
+                        <label class="relative glass-card p-3.5 rounded-2xl border cursor-pointer flex items-center gap-3 hover:border-pink-400 transition">
+                            <input type="radio" name="paymentOption" value="100" onchange="updatePaymentCalculations()" class="accent-pink-500 w-4 h-4">
+                            <div>
+                                <span class="block text-xs font-bold text-pink-200" data-i18n="plan_100">دفع المبلغ كاملاً 100%</span>
+                                <span class="block text-[10px] text-gray-300" data-i18n="plan_100_sub">تسهيل الإجراءات والتوصيل المباشر</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Payment Method Selector (Etisalat Cash / InstaPay) -->
+                <div class="space-y-3 pt-2 border-t border-pink-500/20">
+                    <h4 class="text-sm font-bold text-pink-300 flex items-center gap-2">
+                        <i class="fa-solid fa-wallet"></i>
+                        <span data-i18n="payment_method">وسيلة التحويل الإلكتروني</span>
+                    </h4>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <label class="glass-card p-3 rounded-xl border flex items-center gap-3 cursor-pointer hover:bg-pink-500/20">
+                            <input type="radio" name="payMethod" value="Etisalat Cash" checked="" class="accent-pink-500">
+                            <i class="fa-solid fa-mobile-screen-button text-green-400 text-lg"></i>
+                            <span class="text-xs font-bold text-white">اتصالات كاش (Etisalat Cash)</span>
+                        </label>
+
+                        <label class="glass-card p-3 rounded-xl border flex items-center gap-3 cursor-pointer hover:bg-pink-500/20">
+                            <input type="radio" name="payMethod" value="InstaPay" class="accent-pink-500">
+                            <i class="fa-solid fa-bolt text-purple-400 text-lg"></i>
+                            <span class="text-xs font-bold text-white">إنستا باي (InstaPay)</span>
+                        </label>
+                    </div>
+
+                    <!-- Payment Transfer Instructions Box -->
+                    <div class="bg-purple-900/60 p-4 rounded-2xl border border-pink-400/40 text-center space-y-2">
+                        <p class="text-xs text-pink-200" data-i18n="transfer_to_number">حول المبلغ المطلوب على الرقم المربوط بالمحفظة:</p>
+                        <div class="inline-flex items-center gap-3 bg-black/50 px-4 py-2 rounded-xl border border-pink-400/50">
+                            <span id="transferNumber" class="text-lg font-black tracking-widest text-pink-300">01123008460</span>
+                            <button type="button" onclick="copyTransferNumber()" class="text-xs bg-pink-500/30 hover:bg-pink-500/60 text-white px-2.5 py-1 rounded-lg transition">
+                                <i class="fa-solid fa-copy"></i> <span data-i18n="copy">نسخ</span>
+                            </button>
+                        </div>
+                        <p id="copyToast" class="text-[10px] text-green-400 hidden">تم نسخ الرقم بنجاح!</p>
+                    </div>
+
+                    <!-- Reference Code & Proof Input -->
+                    <div>
+                        <label class="block text-xs font-semibold text-pink-200 mb-1" data-i18n="txn_ref">رقم عملية التحويل / كود الإشعار المرجعي *</label>
+                        <input type="text" id="txnRef" required="" class="w-full bg-white/10 border border-pink-400/30 rounded-xl px-4 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-pink-400" placeholder="ادخل رقم المرجع بعد التحويل (مثال: TRX9872134)">
+                    </div>
+                </div>
+
+                <!-- Order Breakdown Summary -->
+                <div class="bg-black/30 p-4 rounded-2xl border border-white/10 space-y-2 text-xs">
+                    <div class="flex justify-between text-gray-300">
+                        <span data-i18n="cart_total">إجمالي المشتريات:</span>
+                        <span id="summaryCartTotal" class="font-bold">0 EGP</span>
+                    </div>
+                    <div class="flex justify-between text-gray-300">
+                        <span data-i18n="shipping_fee">مصاريف الشحن:</span>
+                        <span>50 EGP</span>
+                    </div>
+                    <div class="flex justify-between text-pink-300 font-bold border-t border-white/10 pt-2 text-sm">
+                        <span data-i18n="payable_now">المبلغ المطلوب تحويله الآن:</span>
+                        <span id="summaryPayableNow" class="text-pink-400 font-black text-base">0 EGP</span>
+                    </div>
+                    <div class="flex justify-between text-gray-400 text-[11px]">
+                        <span data-i18n="payable_on_delivery">المتبقي عند الاستلام:</span>
+                        <span id="summaryPayableLater">0 EGP</span>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="w-full gradient-btn text-white font-bold py-3.5 rounded-xl text-base shadow-lg transition flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-check-circle"></i>
+                    <span data-i18n="confirm_order">تأكيد الطلب وإرسال التحويل</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div id="orderSuccessModal" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-black/80 backdrop-blur-md p-4">
+        <div class="w-full max-w-md glass-card rounded-3xl p-8 text-center border border-pink-400/50 space-y-4">
+            <div class="w-16 h-16 bg-gradient-to-tr from-pink-500 to-purple-600 rounded-full flex items-center justify-center mx-auto shadow-lg shadow-pink-500/50">
+                <i class="fa-solid fa-check text-3xl text-white animate-bounce"></i>
+            </div>
+            <h3 class="text-2xl font-black gradient-text" data-i18n="order_success_title">تم إرسال طلبك بنجاح! 🎉</h3>
+            <p class="text-xs text-pink-100/90 leading-relaxed" data-i18n="order_success_desc">
+                شكراً لتسوقك من Memo Shop. سيتم مراجعة إشعار التحويل وتجهيز طلبك للشحن فوراً.
+            </p>
+            <div class="bg-black/30 p-3 rounded-xl border border-pink-400/20 text-xs">
+                <span data-i18n="order_num">رقم الطلب:</span> <strong id="confirmedOrderId" class="text-pink-300">#MEMO-1001</strong>
+            </div>
+            <button onclick="closeSuccessModal()" class="w-full gradient-btn text-white font-bold py-3 rounded-xl transition">
+                <span data-i18n="continue_shopping">العودة للتسوق</span>
+            </button>
+        </div>
+    </div>
+
+    <div id="adminLoginModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-md p-4 hidden">
+        <div class="w-full max-w-sm glass-card rounded-3xl p-6 border border-purple-400/40 shadow-2xl relative">
+            <button onclick="closeAdminModal()" class="absolute top-4 left-4 text-gray-400 hover:text-white">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="text-center mb-6">
+                <i class="fa-solid fa-shield-halved text-4xl text-pink-400 mb-2"></i>
+                <h3 class="text-xl font-bold gradient-text" data-i18n="admin_login">دخول لوحة التحكم</h3>
+                <p class="text-xs text-pink-200/70" data-i18n="admin_only">خاصة بمدير المتجر فقط</p>
+            </div>
+
+            <form onsubmit="handleAdminLogin(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-bold text-pink-200 mb-1" data-i18n="password">كلمة المرور السريّة</label>
+                    <div class="relative">
+                        <input type="password" id="adminPass" required="" class="w-full bg-white/10 border border-pink-400/30 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:ring-2 focus:ring-pink-400 pr-10">
+                        <button type="button" onclick="togglePasswordVisibility(&#39;adminPass&#39;)" class="absolute left-3 top-3 text-pink-300 text-xs">
+                            <i class="fa-solid fa-eye" id="adminPassIcon"></i>
+                        </button>
+                    </div>
+                </div>
+                <p id="loginError" class="text-xs text-red-400 hidden text-center" data-i18n="invalid_pass">كلمة المرور غير صحيحة!</p>
+
+                <button type="submit" class="w-full gradient-btn text-white font-bold py-2.5 rounded-xl text-sm transition">
+                    <span data-i18n="login_btn">تسجيل الدخول</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div id="adminDashboardModal" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-black/90 backdrop-blur-lg p-4">
+        <div class="w-full max-w-5xl bg-slate-950 border border-pink-500/30 rounded-3xl p-6 md:p-8 h-[90vh] flex flex-col justify-between overflow-hidden shadow-2xl">
+            
+            <!-- Dashboard Header -->
+            <div class="flex items-center justify-between pb-4 border-b border-pink-500/20">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-pink-500/30 flex items-center justify-center text-pink-300">
+                        <i class="fa-solid fa-sliders text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold gradient-text" data-i18n="dashboard_title">لوحة تحكم Memo Shop</h3>
+                        <span class="text-xs text-green-400" data-i18n="authenticated">مُوثّق بحساب المسؤول</span>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <button onclick="switchAdminTab(&#39;products&#39;)" id="tabBtnProducts" class="px-4 py-2 rounded-xl text-xs font-bold bg-pink-500 text-white transition">المنتجات</button>
+                    <button onclick="switchAdminTab(&#39;orders&#39;)" id="tabBtnOrders" class="px-4 py-2 rounded-xl text-xs font-bold bg-white/10 text-pink-200 transition">الطلبات الواردة</button>
+                    <button onclick="closeAdminDashboard()" class="w-9 h-9 rounded-full bg-white/10 text-pink-200 hover:text-white flex items-center justify-center mr-2">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Dashboard Content Scroll Area -->
+            <div class="flex-1 overflow-y-auto py-6 pr-2">
+                
+                <!-- Tab 1: Products Management -->
+                <div id="adminProductsTab" class="space-y-6">
+                    <div class="flex justify-between items-center">
+                        <h4 class="text-lg font-bold text-pink-200">إدارة المنتجات</h4>
+                        <button onclick="openAddProductModal()" class="gradient-btn text-white px-4 py-2 rounded-xl text-xs font-bold flex items-center gap-2">
+                            <i class="fa-solid fa-plus"></i> إضافة منتج جديد
+                        </button>
+                    </div>
+
+                    <div class="overflow-x-auto rounded-2xl border border-pink-500/20">
+                        <table class="w-full text-right text-xs text-gray-200">
+                            <thead class="bg-pink-950/60 text-pink-300 font-bold border-b border-pink-500/20">
+                                <tr>
+                                    <th class="p-3">الحديثة</th>
+                                    <th class="p-3">اسم المنتج</th>
+                                    <th class="p-3">القسم</th>
+                                    <th class="p-3">السعر</th>
+                                    <th class="p-3 text-center">إجراءات</th>
+                                </tr>
+                            </thead>
+                            <tbody id="adminProductsTable" class="divide-y divide-white/5">
+                                <!-- Products rows inject dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Tab 2: Orders List -->
+                <div id="adminOrdersTab" class="hidden space-y-6">
+                    <h4 class="text-lg font-bold text-pink-200">الطلبات الواردة من العملاء</h4>
+                    <div class="overflow-x-auto rounded-2xl border border-pink-500/20">
+                        <table class="w-full text-right text-xs text-gray-200">
+                            <thead class="bg-purple-950/60 text-pink-300 font-bold border-b border-pink-500/20">
+                                <tr>
+                                    <th class="p-3">رقم الطلب</th>
+                                    <th class="p-3">العميل</th>
+                                    <th class="p-3">الهاتف</th>
+                                    <th class="p-3">طريقة التحويل</th>
+                                    <th class="p-3">كود المرجع</th>
+                                    <th class="p-3">المحتويات</th>
+                                    <th class="p-3">المدفوع</th>
+                                    <th class="p-3 text-center">حذف</th>
+                                </tr>
+                            </thead>
+                            <tbody id="adminOrdersTable" class="divide-y divide-white/5">
+                                <!-- Orders rows inject dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="addProductModal" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-black/80 backdrop-blur-md p-4">
+        <div class="w-full max-w-md glass-card rounded-3xl p-6 border border-pink-400/40 relative">
+            <button onclick="closeAddProductModal()" class="absolute top-4 left-4 text-gray-400 hover:text-white">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <h3 class="text-lg font-bold gradient-text mb-4" id="addProductTitle">إضافة منتج جديد</h3>
+
+            <form onsubmit="handleSaveProduct(event)" class="space-y-4">
+                <input type="hidden" id="editProductId">
+                <div>
+                    <label class="block text-xs font-bold text-pink-200 mb-1">اسم المنتج</label>
+                    <input type="text" id="prodTitle" required="" class="w-full bg-white/10 border border-pink-400/30 rounded-xl px-3 py-2 text-xs text-white">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-pink-200 mb-1">القسم</label>
+                    <select id="prodCategory" required="" class="w-full bg-slate-900 border border-pink-400/30 rounded-xl px-3 py-2 text-xs text-white">
+                        <option value="bestie">كتب تلوين أنت وصاحبك</option>
+                        <option value="movies">كتب أفلام</option>
+                        <option value="series">كتب مسلسلات</option>
+                        <option value="tools">الألوان والأدوات</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-pink-200 mb-1">السعر (بالجنيه EGP)</label>
+                    <input type="number" id="prodPrice" required="" class="w-full bg-white/10 border border-pink-400/30 rounded-xl px-3 py-2 text-xs text-white">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-pink-200 mb-1">رابط الصورة (Image URL)</label>
+                    <input type="url" id="prodImg" required="" class="w-full bg-white/10 border border-pink-400/30 rounded-xl px-3 py-2 text-xs text-white" placeholder="https://...">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-pink-200 mb-1">الوصف</label>
+                    <textarea id="prodDesc" rows="2" class="w-full bg-white/10 border border-pink-400/30 rounded-xl px-3 py-2 text-xs text-white"></textarea>
+                </div>
+
+                <button type="submit" class="w-full gradient-btn text-white font-bold py-2.5 rounded-xl text-xs transition">
+                    حفظ المنتج
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="relative z-10 border-t border-pink-500/20 bg-black/40 backdrop-blur-md mt-20 py-8 text-center">
+        <div class="max-w-7xl mx-auto px-4 space-y-3">
+            <div class="flex items-center justify-center gap-2 text-xl font-bold gradient-text">
+                <i class="fa-solid fa-heart text-pink-400"></i> Memo Shop - Gifts &amp; Memories
+            </div>
+            <p class="text-xs text-pink-200/70">جميع الحقوق محفوظة © 2026</p>
+            
+            <!-- MANDATORY CREDIT IN ENGLISH -->
+            <div class="pt-2 border-t border-white/5 inline-block">
+                <span class="text-xs font-mono tracking-widest text-pink-300 font-bold bg-pink-950/60 px-4 py-1.5 rounded-full border border-pink-500/30">
+                    Designed &amp; Developed by Eng. Ghamry
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const DEFAULT_PRODUCTS = [
+            {
+                id: 'prod-1',
+                title: 'كتاب تلوين Besties - أنت وصاحبك (إصدار Twin Duo)',
+                category: 'bestie',
+                price: 180,
+                img: 'https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?auto=format&fit=crop&w=600&q=80',
+                desc: 'كتاب تلوين مزدوج مصمم لمشاركته مع صديقك المفضل. يحتوي على 40 صفحة مرحة ملهمة.'
+            },
+            {
+                id: 'prod-2',
+                title: 'كتاب تلوين عالم هاري بوتر السحري (Movie Edition)',
+                category: 'movies',
+                price: 210,
+                img: 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=600&q=80',
+                desc: 'عِش مغامرات هوجوورتس ولون أبطالك وشخصياتك المفضلة بتفاصيل مذهلة.'
+            },
+            {
+                id: 'prod-3',
+                title: 'كتاب تلوين مسلسل Friends (The One With Coloring)',
+                category: 'series',
+                price: 195,
+                img: 'https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&w=600&q=80',
+                desc: 'استمتع بأشهر لقطات ومقولات فريندز في كتاب تلوين مليء بالنستالجيا والذكريات.'
+            },
+            {
+                id: 'prod-4',
+                title: 'طقم ألوان أكريليك مزدوجة السن 48 لون (Dual Tip Acrylic Markers)',
+                category: 'tools',
+                price: 320,
+                img: 'https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=600&q=80',
+                desc: 'ألوان فاخرة ثابتة وتغطية ممتازة لصفحات كتب التلوين والرسم.'
+            },
+            {
+                id: 'prod-5',
+                title: 'كتاب تلوين ثنائي Soulmates - للأصحاب والأحباء',
+                category: 'bestie',
+                price: 175,
+                img: 'https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&w=600&q=80',
+                desc: 'رسومات مقسومة بين صفحتين تقومان بتلوينها معاً في وقت واحد.'
+            },
+            {
+                id: 'prod-6',
+                title: 'كتاب تلوين مسلسلات أنمي ودراما الكورية K-Drama',
+                category: 'series',
+                price: 185,
+                img: 'https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=600&q=80',
+                desc: 'أشهر المشاهد الرومانسية والدرامية بالرسومات الكرتونية الفريدة.'
+            }
+        ];
+
+        // Global State
+        let products = JSON.parse(localStorage.getItem('memo_products')) || DEFAULT_PRODUCTS;
+        let cart = JSON.parse(localStorage.getItem('memo_cart')) || [];
+        let orders = JSON.parse(localStorage.getItem('memo_orders')) || [];
+        let currentCat = 'all';
+        let currentLang = 'ar';
+        let isAdmin = false;
+
+        // Internationalization Dictionary
+        const i18n = {
+            ar: {
+                sub_title: "GIFTS & MEMORIES",
+                admin_panel: "لوحة التحكم",
+                hero_title: "لون أحلى اللحظات مع أصحابك وذكريات أفلامك المفضلة!",
+                hero_subtitle: "كتالوج حصري لكتب التلوين الزوجية، كتب أفلامك ومسلسلاتك المحبوبة وأجود أنواع الألوان بأسعار مميزة.",
+                deposit_banner_title: "امكانية الدفع 50% مقدم فقط!",
+                deposit_banner_sub: "ادفع 50% عبر اتصالات كاش أو انستا باي وباقي المبلغ عند الاستلام 🚚",
+                shop_now: "تسوق الآن 🎨",
+                cat_all: "🌟 الكل",
+                cat_bestie: "👭 كتب تلوين أنت وصاحبك",
+                cat_movies: "🎬 كتب أفلام",
+                cat_series: "📺 كتب مسلسلات",
+                cat_tools: "🎨 الألوان والأدوات",
+                total_products: "عدد المنتجات:",
+                catalog_sub: "اختر كتابك المفضل وابدأ التلوين والبهجة",
+                add_to_cart: "إضافة للسلة",
+                no_products: "لا توجد منتجات مطابقة للبحث",
+                try_another: "جرب البحث بكلمات أخرى أو تغيير القسم",
+                cart_title: "سلة المشتريات",
+                subtotal: "المجموع الفرعي:",
+                shipping_note: "الشحن:",
+                calculated_checkout: "يحسب في الخطوة التالية",
+                total: "الإجمالي:",
+                proceed_checkout: "متابعة الشراء (طريقة Amazon / Noon)",
+                checkout_heading: "إتمام الطلب",
+                secure_checkout: "دفع آمن وسريع مثل نون وأمازون",
+                shipping_info: "بيانات الشحن والعنوان",
+                full_name: "الاسم بالكامل *",
+                phone: "رقم الهاتف (المربوط بالواتساب) *",
+                address: "العنوان التفصيلي (المحافظة / المدينة / الشارع) *",
+                payment_plan: "اختر نظام الدفع",
+                plan_50: "دفع 50% مقدم قبل الشحن",
+                plan_50_sub: "و 50% المتبقية تسدد عند الاستلام",
+                plan_100: "دفع المبلغ كاملاً 100%",
+                plan_100_sub: "تسهيل الإجراءات والتوصيل المباشر",
+                payment_method: "وسيلة التحويل الإلكتروني",
+                transfer_to_number: "حول المبلغ المطلوب على الرقم المربوط بالمحفظة:",
+                copy: "نسخ",
+                txn_ref: "رقم عملية التحويل / كود الإشعار المرجعي *",
+                cart_total: "إجمالي المشتريات:",
+                shipping_fee: "مصاريف الشحن:",
+                payable_now: "المبلغ المطلوب تحويله الآن:",
+                payable_on_delivery: "المتبقي عند الاستلام:",
+                confirm_order: "تأكيد الطلب وإرسال التحويل",
+                order_success_title: "تم إرسال طلبك بنجاح! 🎉",
+                order_success_desc: "شكراً لتسوقك من Memo Shop. سيتم مراجعة إشعار التحويل وتجهيز طلبك للشحن فوراً.",
+                order_num: "رقم الطلب:",
+                continue_shopping: "العودة للتسوق",
+                admin_login: "دخول لوحة التحكم",
+                admin_only: "خاصة بمدير المتجر فقط",
+                password: "كلمة المرور السريّة",
+                login_btn: "تسجيل الدخول",
+                invalid_pass: "كلمة المرور غير صحيحة!",
+                dashboard_title: "لوحة تحكم Memo Shop",
+                authenticated: "مُوثّق بحساب المسؤول"
+            },
+            en: {
+                sub_title: "GIFTS & MEMORIES",
+                admin_panel: "Admin Panel",
+                hero_title: "Color the best memories with your bestie and favorite movies!",
+                hero_subtitle: "Exclusive dual coloring books, movies & series themed books, and premium coloring supplies.",
+                deposit_banner_title: "Pay 50% Deposit Option Available!",
+                deposit_banner_sub: "Pay 50% via Etisalat Cash / InstaPay & remainder on delivery 🚚",
+                shop_now: "Shop Now 🎨",
+                cat_all: "🌟 All Products",
+                cat_bestie: "👭 You & Bestie Books",
+                cat_movies: "🎬 Movie Books",
+                cat_series: "📺 Series Books",
+                cat_tools: "🎨 Colors & Tools",
+                total_products: "Total Items:",
+                catalog_sub: "Choose your favorite book and start coloring joy",
+                add_to_cart: "Add to Cart",
+                no_products: "No products matched your search",
+                try_another: "Try searching with different keywords or category",
+                cart_title: "Shopping Cart",
+                subtotal: "Subtotal:",
+                shipping_note: "Shipping:",
+                calculated_checkout: "Calculated at checkout",
+                total: "Total:",
+                proceed_checkout: "Proceed to Checkout (Amazon/Noon style)",
+                checkout_heading: "Checkout",
+                secure_checkout: "Fast & secure payment like Amazon & Noon",
+                shipping_info: "Shipping Details",
+                full_name: "Full Name *",
+                phone: "Phone Number (WhatsApp) *",
+                address: "Full Delivery Address *",
+                payment_plan: "Select Payment Plan",
+                plan_50: "Pay 50% Deposit Before Shipping",
+                plan_50_sub: "Remaining 50% payable upon delivery",
+                plan_100: "Pay Full Amount 100%",
+                plan_100_sub: "Direct processing and smooth delivery",
+                payment_method: "Digital Transfer Option",
+                transfer_to_number: "Transfer required amount to wallet number:",
+                copy: "Copy",
+                txn_ref: "Transaction Reference Code / Receipt *",
+                cart_total: "Items Total:",
+                shipping_fee: "Delivery Fee:",
+                payable_now: "Amount Payable Now:",
+                payable_on_delivery: "Remaining on Delivery:",
+                confirm_order: "Confirm Order & Submit Transfer",
+                order_success_title: "Order Placed Successfully! 🎉",
+                order_success_desc: "Thank you for shopping at Memo Shop. We will verify your payment and prepare your shipment.",
+                order_num: "Order ID:",
+                continue_shopping: "Continue Shopping",
+                admin_login: "Admin Dashboard Login",
+                admin_only: "Store Owner Access Only",
+                password: "Secret Password",
+                login_btn: "Login",
+                invalid_pass: "Incorrect password!",
+                dashboard_title: "Memo Shop Control Panel",
+                authenticated: "Authenticated as Owner"
+            }
+        };
+
+        function renderProducts(query = '') {
+            const grid = document.getElementById('productGrid');
+            const empty = document.getElementById('emptyState');
+            grid.innerHTML = '';
+
+            let filtered = products.filter(p => {
+                const matchesCat = currentCat === 'all' || p.category === currentCat;
+                const matchesSearch = p.title.toLowerCase().includes(query.toLowerCase()) || 
+                                      p.desc.toLowerCase().includes(query.toLowerCase());
+                return matchesCat && matchesSearch;
+            });
+
+            document.getElementById('productCount').innerText = filtered.length;
+
+            if (filtered.length === 0) {
+                empty.classList.remove('hidden');
+            } else {
+                empty.classList.add('hidden');
+                filtered.forEach(p => {
+                    const card = document.createElement('div');
+                    card.className = "glass-card glass-card-hover rounded-2xl overflow-hidden flex flex-col justify-between p-4 border border-pink-400/20";
+                    card.innerHTML = `
+                        <div>
+                            <div class="relative w-full h-48 rounded-xl overflow-hidden mb-3 group">
+                                <img src="${p.img}" alt="${p.title}" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onerror="this.src='https://placehold.co/400x300/2b102f/ff7ebb?text=Memo+Shop'">
+                                <span class="absolute top-2 right-2 bg-pink-600/80 backdrop-blur-md text-white text-[10px] font-bold px-2.5 py-1 rounded-full border border-pink-300/30">
+                                    ${getCategoryBadgeText(p.category)}
+                                </span>
+                            </div>
+                            <h3 class="font-bold text-sm text-pink-100 line-clamp-2 mb-1.5">${p.title}</h3>
+                            <p class="text-xs text-gray-300/80 line-clamp-2 mb-3 font-light">${p.desc}</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center justify-between mb-3 pt-2 border-t border-pink-500/10">
+                                <span class="text-lg font-black gradient-text">${p.price} EGP</span>
+                                <span class="badge-deposit text-[10px] font-bold px-2 py-0.5 rounded-md">50% مقدم</span>
+                            </div>
+                            <button onclick="addToCart('${p.id}')" class="w-full gradient-btn text-white text-xs font-bold py-2.5 rounded-xl flex items-center justify-center gap-2 shadow-md">
+                                <i class="fa-solid fa-cart-plus"></i>
+                                <span data-i18n="add_to_cart">${i18n[currentLang].add_to_cart}</span>
+                            </button>
+                        </div>
+                    `;
+                    grid.appendChild(card);
+                });
+            }
+        }
+
+        function getCategoryBadgeText(cat) {
+            switch(cat) {
+                case 'bestie': return currentLang === 'ar' ? 'كتب أنت وصاحبك' : 'Bestie Books';
+                case 'movies': return currentLang === 'ar' ? 'كتب أفلام' : 'Movie Books';
+                case 'series': return currentLang === 'ar' ? 'كتب مسلسلات' : 'Series Books';
+                case 'tools': return currentLang === 'ar' ? 'ألوان وأدوات' : 'Colors & Tools';
+                default: return 'Memo Shop';
+            }
+        }
+
+        function filterCategory(cat) {
+            currentCat = cat;
+            document.querySelectorAll('.cat-btn').forEach(btn => {
+                if (btn.dataset.cat === cat) {
+                    btn.className = "cat-btn active-cat bg-pink-500/40 border border-pink-400 text-white px-4 py-1.5 rounded-full font-semibold transition";
+                } else {
+                    btn.className = "cat-btn bg-white/5 border border-white/10 text-pink-100 hover:bg-pink-500/30 px-4 py-1.5 rounded-full font-semibold transition";
+                }
+            });
+
+            // Update title
+            const titleMap = {
+                all: i18n[currentLang].cat_all,
+                bestie: i18n[currentLang].cat_bestie,
+                movies: i18n[currentLang].cat_movies,
+                series: i18n[currentLang].cat_series,
+                tools: i18n[currentLang].cat_tools
+            };
+            document.getElementById('currentCategoryTitle').innerText = titleMap[cat] || i18n[currentLang].cat_all;
+
+            renderProducts();
+        }
+
+        function handleSearch() {
+            const q = document.getElementById('searchInput').value;
+            renderProducts(q);
+        }
+
+        function handleSearchMobile() {
+            const q = document.getElementById('searchInputMobile').value;
+            renderProducts(q);
+        }
+
+        function scrollToProducts() {
+            document.getElementById('productsSection').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function addToCart(id) {
+            const prod = products.find(p => p.id === id);
+            if (!prod) return;
+
+            const existing = cart.find(item => item.id === id);
+            if (existing) {
+                existing.qty += 1;
+            } else {
+                cart.push({ ...prod, qty: 1 });
+            }
+
+            saveCart();
+            updateCartUI();
+            toggleCartModal(true);
+        }
+
+        function updateCartQty(id, delta) {
+            const item = cart.find(i => i.id === id);
+            if (!item) return;
+
+            item.qty += delta;
+            if (item.qty <= 0) {
+                cart = cart.filter(i => i.id !== id);
+            }
+            saveCart();
+            updateCartUI();
+        }
+
+        function saveCart() {
+            localStorage.setItem('memo_cart', JSON.stringify(cart));
+        }
+
+        function updateCartUI() {
+            const totalItems = cart.reduce((sum, item) => sum + item.qty, 0);
+            document.getElementById('cartCount').innerText = totalItems;
+
+            const list = document.getElementById('cartItemsList');
+            list.innerHTML = '';
+
+            let subtotal = 0;
+
+            if (cart.length === 0) {
+                list.innerHTML = `
+                    <div class="text-center py-8 text-pink-200/60 text-xs">
+                        <i class="fa-solid fa-cart-arrow-down text-3xl mb-2"></i>
+                        <p>السلة فارغة حالياً</p>
+                    </div>
+                `;
+            } else {
+                cart.forEach(item => {
+                    subtotal += item.price * item.qty;
+                    const itemEl = document.createElement('div');
+                    itemEl.className = "flex items-center justify-between glass-card p-3 rounded-xl border border-pink-400/20";
+                    itemEl.innerHTML = `
+                        <div class="flex items-center gap-3">
+                            <img src="${item.img}" class="w-12 h-12 rounded-lg object-cover">
+                            <div>
+                                <h4 class="text-xs font-bold text-pink-100 line-clamp-1">${item.title}</h4>
+                                <span class="text-xs font-black text-pink-300">${item.price} EGP</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 bg-black/30 px-2 py-1 rounded-lg">
+                            <button onclick="updateCartQty('${item.id}', -1)" class="text-pink-300 hover:text-white px-1 font-bold">-</button>
+                            <span class="text-xs font-bold px-1">${item.qty}</span>
+                            <button onclick="updateCartQty('${item.id}', 1)" class="text-pink-300 hover:text-white px-1 font-bold">+</button>
+                        </div>
+                    `;
+                    list.appendChild(itemEl);
+                });
+            }
+
+            document.getElementById('cartSubtotal').innerText = `${subtotal} EGP`;
+            document.getElementById('cartTotal').innerText = `${subtotal} EGP`;
+        }
+
+        function toggleCartModal(openForce = false) {
+            const modal = document.getElementById('cartModal');
+            if (openForce) {
+                modal.classList.remove('hidden');
+            } else {
+                modal.classList.toggle('hidden');
+            }
+        }
+
+        function startCheckout() {
+            if (cart.length === 0) {
+                alert(currentLang === 'ar' ? 'السلة فارغة!' : 'Cart is empty!');
+                return;
+            }
+            toggleCartModal(false);
+            document.getElementById('checkoutModal').classList.remove('hidden');
+            updatePaymentCalculations();
+        }
+
+        function closeCheckoutModal() {
+            document.getElementById('checkoutModal').classList.add('hidden');
+        }
+
+        function updatePaymentCalculations() {
+            const cartTotal = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
+            const shippingFee = 50;
+            const grandTotal = cartTotal + shippingFee;
+
+            const selectedOption = document.querySelector('input[name="paymentOption"]:checked').value;
+
+            let payableNow = grandTotal;
+            let payableLater = 0;
+
+            if (selectedOption === '50') {
+                payableNow = Math.round(grandTotal * 0.5);
+                payableLater = grandTotal - payableNow;
+            }
+
+            document.getElementById('summaryCartTotal').innerText = `${cartTotal} EGP`;
+            document.getElementById('summaryPayableNow').innerText = `${payableNow} EGP`;
+            document.getElementById('summaryPayableLater').innerText = `${payableLater} EGP`;
+        }
+
+        function copyTransferNumber() {
+            const num = "01123008460";
+            const dummy = document.createElement("textarea");
+            document.body.appendChild(dummy);
+            dummy.value = num;
+            dummy.select();
+            document.execCommand("copy");
+            document.body.removeChild(dummy);
+
+            const toast = document.getElementById('copyToast');
+            toast.classList.remove('hidden');
+            setTimeout(() => toast.classList.add('hidden'), 2500);
+        }
+
+        function handlePlaceOrder(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('custName').value;
+            const phone = document.getElementById('custPhone').value;
+            const address = document.getElementById('custAddress').value;
+            const payOption = document.querySelector('input[name="paymentOption"]:checked').value;
+            const payMethod = document.querySelector('input[name="payMethod"]:checked').value;
+            const txnRef = document.getElementById('txnRef').value;
+
+            const cartTotal = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
+            const shippingFee = 50;
+            const grandTotal = cartTotal + shippingFee;
+            const payableNow = payOption === '50' ? Math.round(grandTotal * 0.5) : grandTotal;
+
+            const orderId = '#MEMO-' + Math.floor(1000 + Math.random() * 9000);
+
+            const newOrder = {
+                id: orderId,
+                date: new Date().toLocaleString(),
+                customer: name,
+                phone: phone,
+                address: address,
+                items: [...cart],
+                totalAmount: grandTotal,
+                depositPercentage: payOption,
+                paidNow: payableNow,
+                payMethod: payMethod,
+                txnRef: txnRef,
+                status: 'بانتظار التأكيد'
+            };
+
+            orders.unshift(newOrder);
+            localStorage.setItem('memo_orders', JSON.stringify(orders));
+
+            // Clear Cart
+            cart = [];
+            saveCart();
+            updateCartUI();
+
+            closeCheckoutModal();
+            document.getElementById('confirmedOrderId').innerText = orderId;
+            document.getElementById('orderSuccessModal').classList.remove('hidden');
+            renderAdminOrders();
+        }
+
+        function closeSuccessModal() {
+            document.getElementById('orderSuccessModal').classList.add('hidden');
+        }
+
+        function openAdminModal() {
+            if (isAdmin) {
+                openAdminDashboard();
+            } else {
+                document.getElementById('adminLoginModal').classList.remove('hidden');
+            }
+        }
+
+        function closeAdminModal() {
+            document.getElementById('adminLoginModal').classList.add('hidden');
+        }
+
+        function togglePasswordVisibility(fieldId) {
+            const field = document.getElementById(fieldId);
+            const icon = document.getElementById('adminPassIcon');
+            if (field.type === "password") {
+                field.type = "text";
+                icon.className = "fa-solid fa-eye-slash";
+            } else {
+                field.type = "password";
+                icon.className = "fa-solid fa-eye";
+            }
+        }
+
+        function handleAdminLogin(e) {
+            e.preventDefault();
+            const pass = document.getElementById('adminPass').value;
+            const error = document.getElementById('loginError');
+
+            if (pass === 'malak2222') {
+                isAdmin = true;
+                error.classList.add('hidden');
+                closeAdminModal();
+                openAdminDashboard();
+            } else {
+                error.classList.remove('hidden');
+            }
+        }
+
+        function openAdminDashboard() {
+            document.getElementById('adminDashboardModal').classList.remove('hidden');
+            renderAdminProducts();
+            renderAdminOrders();
+        }
+
+        function closeAdminDashboard() {
+            document.getElementById('adminDashboardModal').classList.add('hidden');
+        }
+
+        function switchAdminTab(tab) {
+            const prodTab = document.getElementById('adminProductsTab');
+            const ordersTab = document.getElementById('adminOrdersTab');
+            const btnProd = document.getElementById('tabBtnProducts');
+            const btnOrders = document.getElementById('tabBtnOrders');
+
+            if (tab === 'products') {
+                prodTab.classList.remove('hidden');
+                ordersTab.classList.add('hidden');
+                btnProd.className = "px-4 py-2 rounded-xl text-xs font-bold bg-pink-500 text-white transition";
+                btnOrders.className = "px-4 py-2 rounded-xl text-xs font-bold bg-white/10 text-pink-200 transition";
+            } else {
+                prodTab.classList.add('hidden');
+                ordersTab.classList.remove('hidden');
+                btnProd.className = "px-4 py-2 rounded-xl text-xs font-bold bg-white/10 text-pink-200 transition";
+                btnOrders.className = "px-4 py-2 rounded-xl text-xs font-bold bg-pink-500 text-white transition";
+            }
+        }
+
+        function renderAdminProducts() {
+            const table = document.getElementById('adminProductsTable');
+            table.innerHTML = '';
+
+            products.forEach(p => {
+                const tr = document.createElement('tr');
+                tr.className = "hover:bg-white/5 transition";
+                tr.innerHTML = `
+                    <td class="p-3"><img src="${p.img}" class="w-10 h-10 rounded-lg object-cover"></td>
+                    <td class="p-3 font-bold text-white">${p.title}</td>
+                    <td class="p-3 text-pink-300">${getCategoryBadgeText(p.category)}</td>
+                    <td class="p-3 font-bold">${p.price} EGP</td>
+                    <td class="p-3 text-center space-x-2 rtl:space-x-reverse">
+                        <button onclick="deleteProduct('${p.id}')" class="text-red-400 hover:text-red-300 text-sm p-1">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                    </td>
+                `;
+                table.appendChild(tr);
+            });
+        }
+
+        function renderAdminOrders() {
+            const table = document.getElementById('adminOrdersTable');
+            table.innerHTML = '';
+
+            if (orders.length === 0) {
+                table.innerHTML = `<tr><td colspan="8" class="text-center p-6 text-gray-400">لا توجد طلبات مستلمة بعد.</td></tr>`;
+                return;
+            }
+
+            orders.forEach(o => {
+                const itemsStr = o.items.map(i => `${i.title} (x${i.qty})`).join(', ');
+                const tr = document.createElement('tr');
+                tr.className = "hover:bg-white/5 transition";
+                tr.innerHTML = `
+                    <td class="p-3 font-bold text-pink-300">${o.id}</td>
+                    <td class="p-3 font-semibold text-white">${o.customer}</td>
+                    <td class="p-3">${o.phone}</td>
+                    <td class="p-3 text-purple-300 font-bold">${o.payMethod}</td>
+                    <td class="p-3"><span class="bg-black/40 px-2 py-1 rounded text-pink-200 font-mono">${o.txnRef}</span></td>
+                    <td class="p-3 max-w-xs truncate text-[11px] text-gray-300">${itemsStr}</td>
+                    <td class="p-3 font-black text-green-400">${o.paidNow} EGP (${o.depositPercentage}%)</td>
+                    <td class="p-3 text-center">
+                        <button onclick="deleteOrder('${o.id}')" class="text-red-400 hover:text-red-300">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                    </td>
+                `;
+                table.appendChild(tr);
+            });
+        }
+
+        function openAddProductModal() {
+            document.getElementById('editProductId').value = '';
+            document.getElementById('prodTitle').value = '';
+            document.getElementById('prodPrice').value = '';
+            document.getElementById('prodImg').value = '';
+            document.getElementById('prodDesc').value = '';
+            document.getElementById('addProductModal').classList.remove('hidden');
+        }
+
+        function closeAddProductModal() {
+            document.getElementById('addProductModal').classList.add('hidden');
+        }
+
+        function handleSaveProduct(e) {
+            e.preventDefault();
+
+            const title = document.getElementById('prodTitle').value;
+            const category = document.getElementById('prodCategory').value;
+            const price = parseFloat(document.getElementById('prodPrice').value);
+            const img = document.getElementById('prodImg').value;
+            const desc = document.getElementById('prodDesc').value;
+
+            const newProd = {
+                id: 'prod-' + Date.now(),
+                title,
+                category,
+                price,
+                img,
+                desc
+            };
+
+            products.unshift(newProd);
+            localStorage.setItem('memo_products', JSON.stringify(products));
+
+            closeAddProductModal();
+            renderProducts();
+            renderAdminProducts();
+        }
+
+        function deleteProduct(id) {
+            products = products.filter(p => p.id !== id);
+            localStorage.setItem('memo_products', JSON.stringify(products));
+            renderProducts();
+            renderAdminProducts();
+        }
+
+        function deleteOrder(id) {
+            orders = orders.filter(o => o.id !== id);
+            localStorage.setItem('memo_orders', JSON.stringify(orders));
+            renderAdminOrders();
+        }
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'ar' ? 'en' : 'ar';
+            document.documentElement.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
+            document.documentElement.lang = currentLang;
+            document.getElementById('langText').innerText = currentLang === 'ar' ? 'EN' : 'عربي';
+
+            // Update i18n text
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.dataset.i18n;
+                if (i18n[currentLang][key]) {
+                    el.innerText = i18n[currentLang][key];
+                }
+            });
+
+            renderProducts();
+            updateCartUI();
+        }
+
+        function init3DBackground() {
+            const canvas = document.getElementById('canvas-bg');
+            const scene = new THREE.Scene();
+            const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+            const renderer = new THREE.WebGLRenderer({ canvas: canvas, alpha: true, antialias: true });
+
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            renderer.setPixelRatio(window.devicePixelRatio);
+
+            // Particles Geometry
+            const particlesCount = 120;
+            const geometry = new THREE.BufferGeometry();
+            const positions = new Float32Array(particlesCount * 3);
+            const colors = new Float32Array(particlesCount * 3);
+
+            const colorChoices = [
+                new THREE.Color('#ff7ebb'),
+                new THREE.Color('#e04f98'),
+                new THREE.Color('#9d4edd'),
+                new THREE.Color('#ffffff')
+            ];
+
+            for (let i = 0; i < particlesCount; i++) {
+                positions[i * 3] = (Math.random() - 0.5) * 20;
+                positions[i * 3 + 1] = (Math.random() - 0.5) * 20;
+                positions[i * 3 + 2] = (Math.random() - 0.5) * 20;
+
+                const col = colorChoices[Math.floor(Math.random() * colorChoices.length)];
+                colors[i * 3] = col.r;
+                colors[i * 3 + 1] = col.g;
+                colors[i * 3 + 2] = col.b;
+            }
+
+            geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+            geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+
+            const material = new THREE.PointsMaterial({
+                size: 0.15,
+                vertexColors: true,
+                transparent: true,
+                opacity: 0.7
+            });
+
+            const particleMesh = new THREE.Points(geometry, material);
+            scene.add(particleMesh);
+
+            camera.position.z = 8;
+
+            function animate() {
+                requestAnimationFrame(animate);
+                particleMesh.rotation.x += 0.0008;
+                particleMesh.rotation.y += 0.0012;
+                renderer.render(scene, camera);
+            }
+
+            window.addEventListener('resize', () => {
+                camera.aspect = window.innerWidth / window.innerHeight;
+                camera.updateProjectionMatrix();
+                renderer.setSize(window.innerWidth, window.innerHeight);
+            });
+
+            animate();
+        }
+
+        window.onload = function() {
+            init3DBackground();
+            renderProducts();
+            updateCartUI();
+        };
+    </script>
+
+</body></html>
